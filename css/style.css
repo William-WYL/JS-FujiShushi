@@ -24,6 +24,15 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Yuji';
+  /* Name the font */
+  src: url('./fonts/Yuji_Hentaigana_Akari/YujiHentaiganaAkari-Regular.ttf') format('truetype');
+  /* Path to the .otf file */
+  font-weight: normal;
+  font-style: normal;
+}
+
 a {
   text-decoration: none;
 }
@@ -131,7 +140,7 @@ div#container {
   font-size: 32px;
 }
 
-#content>div#food-menu {
+div#food-menu {
   width: 331px;
   height: 84px;
   border: 1px solid #FFC700;
@@ -185,6 +194,12 @@ div#container {
   align-items: center;
   width: 100px;
   height: auto;
+
+  height: 100%;
+  background-image: url(../img/Logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left center;
 }
 
 /* style for news */
@@ -392,4 +407,57 @@ div#container {
 #right-news2:hover,
 #right-news3:hover {
   transform: scale(1.1);
+}
+
+#contact_form>fieldset:nth-child(3)>button:nth-child(3):hover,
+#contact_form>fieldset:nth-child(3)>button:nth-child(2):hover {
+  background-color: #FFC700;
+  color: #ffffff;
+}
+
+/* Brand name fade in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+#brand-name,
+#slogan,
+#food-menu {
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+#brand-name {
+  animation-delay: 0s;
+}
+
+#slogan {
+  animation-delay: 1s;
+}
+
+#food-menu {
+  animation-delay: 2s;
+}
+
+/* Style for thankyou */
+#reminder {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 26px;
+  color: #ffffff;
+  font-family: 'Economica', sans-serif;
+}
+
+#brand-name>div#thankYouJp {
+  font-family: 'Yuji', sans-serif;
+}
+
+#brand-name>div#thankYou {
+  font-family: 'Orewa', sans-serif;
 }

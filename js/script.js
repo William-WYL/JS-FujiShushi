@@ -33,11 +33,6 @@ switchMenu = () => {
 };
 
 
-
-
-
-
-
 document.addEventListener("DOMContentLoaded", load);
 
 
