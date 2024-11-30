@@ -193,6 +193,8 @@ div#container {
   width: 1440px;
   height: 1024px;
   background-color: #5679AF;
+
+  overflow: hidden;
 }
 
 #news-content {
@@ -339,4 +341,55 @@ div#container {
   #content>h1 {
     font-size: 64px;
   }
+}
+
+/* hover effect */
+#menu>li>a {
+  transition: color 0.3s ease;
+}
+
+#nav>#menu>li>a:hover {
+  color: #FFC700;
+}
+
+#food-menu {
+  transition: background-color 0.3s ease;
+}
+
+#food-menu:hover {
+  background-color: #FFC700;
+}
+
+
+#hamburger>svg:hover {
+  fill: #FFC700;
+  stroke: #FFC700;
+}
+
+#left>div:nth-child(3)>a {
+  transition: color 0.3s ease;
+}
+
+#left>div:nth-child(3)>a:hover {
+  color: #FFC700;
+}
+
+#content>ul>li>div>img {
+  transition: transform 0.5s ease;
+}
+
+#content>ul>li>div>img:hover {
+  transform: scale(1.1);
+}
+
+#right-news1,
+#right-news2,
+#right-news3 {
+  transition: transform 0.5s ease;
+}
+
+#right-news1:hover,
+#right-news2:hover,
+#right-news3:hover {
+  transform: scale(1.1);
 }
