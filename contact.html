@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact us</title>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Bootstrap -->
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/formstyle.css">
+  <!-- Normalize -->
+  <link rel="stylesheet" href="./css/normalize.css">
+  <!-- Import JavaScript -->
+  <script src="./js/script.js"></script>
+  <script src="./js/formValidation.js"></script>
+</head>
+
+<body>
+  <div id="container">
+    <header id="header" class="row align-items-center justify-content-between">
+      <a href="./index.html" id="logo" class="col-md-2">
+      </a>
+      <nav id="nav" class="row col-md-7 justify-content-end">
+        <ul id="menu" class="col-md-9">
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+        <div class="col-md-1 float-right">
+          <a id="hamburger" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-menu">
+              <line x1="2" y1="14" x2="26" y2="14"></line>
+              <line x1="2" y1="8" x2="26" y2="8"></line>
+              <line x1="2" y1="20" x2="26" y2="20"></line>
+            </svg>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main id="content">
+      <div id="form-contact">
+        <form method="#" id="contact_form" action="./index.html">
+          <fieldset>
+            <legend>Client Information</legend>
+            <hr />
+            <div class="formfield">
+              <label for="fname" class="client">First Name:</label>
+              <input type="text" id="fname" name="fname" maxlength="15" value="" autofocus="autofocus" />
+              <div class="client_error error" id="fname_error">* Please enter your first name.</div>
+            </div>
+            <div class="formfield">
+              <label for="lname" class="client">Last Name:</label>
+              <input type="text" id="lname" name="lname" maxlength="20" />
+              <div class="client_error error" id="lname_error">* Please enter your last name.</div>
+            </div>
+            <div class="formfield">
+              <label for="phonenum" class="client">Phone Number:</label>
+              <input type="number" class="no-spinner" id="phonenum" name="phonenum" />
+              <div class="client_error error" id="phonenum_error">* Please enter a valid 8 digit phone number.</div>
+            </div>
+            <div class="formfield">
+              <label for="email" class="client">Email:</label>
+              <input type="text" id="email" name="email" />
+              <div class="client_error error" id="email_error">* Please enter a valid email address.</div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Comments Section</legend>
+            <hr />
+            <label for="feedback">Is there any way we can serve you better?</label><br />
+            <textarea id="feedback" name="feedback" rows="8" cols="50"></textarea>
+            <div class="client_error error" id="feedback_error">* Please enter your comment.</div>
+          </fieldset>
+          <fieldset>
+            <hr />
+            <button type="reset">Clear</button>
+            <button type="submit">Confirm</button>
+          </fieldset>
+
+        </form>
+      </div>
+    </main>
+
+    <footer id="footer">
+      <div id="logo" class="logo-small">
+      </div>
+      <div>
+        <p>2024 Only Used for Academic Purposes. If there is any infringement, please contact
+          weiwang.william.ca@gmail.com</p>
+      </div>
+      <div>
+        <a href="#"><img src="./img/FACEBOOK.png" alt=""></a>
+        <a href="#"><img src="./img/INSTAGRAM.png" alt=""></a>
+      </div>
+    </footer>
+  </div>
+
+
+</body>
+
+</html>

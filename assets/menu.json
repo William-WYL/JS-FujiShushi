@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Unagi roll",
+    "discription": "Eel, cucumber, sesame, rice, soft cheese, 6 pcs.",
+    "price": "$9.99",
+    "image": "./img/dish1.png"
+  },
+  {
+    "name": "Yaki hamachi",
+    "discription": "Tuna, lettuce, cucumber, soft cheese, 6 pcs.",
+    "price": "$14.99",
+    "image": "./img/dish2.png"
+  },
+  {
+    "name": "Okinawa-Roll",
+    "discription": "Shrimp tempura, cucumber, soft cheese, sesame, 4 pcs.",
+    "price": "$9.99",
+    "image": "./img/dish3.png"
+  },
+  {
+    "name": "California",
+    "discription": "Salmon, avocado, mayonnaise, cucumber and tobiko, 6 pcs.",
+    "price": "$5.99",
+    "image": "./img/dish4.png"
+  },
+  {
+    "name": "Kinuki",
+    "discription": "Shrimp, cucumber, green onion, nori, sesame, 6 pcs.",
+    "price": "$8.99",
+    "image": "./img/dish5.png"
+  },
+  {
+    "name": "Philadelphia",
+    "discription": "Salmon, cream cheese, rice, nori, 6 pcs.",
+    "price": "$9.99",
+    "image": "./img/dish6.png"
+  }
+]

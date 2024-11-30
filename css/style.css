@@ -1,0 +1,343 @@
+@font-face {
+  font-family: 'Economica';
+  src: url(./fonts/Economica/Economica-Regular.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Orewa';
+  /* Name the font */
+  src: url('./fonts/orewa/OREWA-PersonalUse.otf') format('opentype');
+  /* Path to the .otf file */
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Maocao';
+  /* Name the font */
+  src: url('./fonts/Liu_Jian_Mao_Cao/LiuJianMaoCao-Regular.ttf') format('opentype');
+  /* Path to the .otf file */
+  font-weight: normal;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Style for index */
+div#container {
+  margin: 0 auto;
+  width: 1440px;
+  height: 1024px;
+  background-image: url(../img/fuji1.png);
+}
+
+#header {
+  height: 60px;
+  padding-left: 134px;
+  padding-right: 50px;
+}
+
+
+
+#logo {
+  height: 100%;
+  background-image: url(../img/Logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left center;
+}
+
+#nav {
+  height: 100%;
+  /* background: skyblue; */
+}
+
+#nav>#menu {
+  margin-right: 100px;
+  display: flex;
+  justify-content: space-between;
+
+  /* Smooth transition */
+  transition: opacity 2s ease, visibility 2s 2s, height 2s ease;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 2s ease, max-height 2s ease;
+  visibility: hidden;
+}
+
+#menu.show {
+  /* Smooth transition */
+  opacity: 1;
+  max-height: 500px;
+  visibility: visible;
+}
+
+#nav>#menu>li {
+  line-height: 60px;
+  display: block;
+  height: 100%;
+  font-size: 36px;
+  list-style: none;
+}
+
+#nav>#menu>li>a {
+  color: #000;
+  font-family: 'Economica', sans-serif;
+}
+
+#nav>div>a>svg {
+  color: #000;
+}
+
+#content {
+  position: relative;
+  width: 100%;
+  height: 94%
+}
+
+#content #brand-name {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#brand-name>div {
+  font-size: 96px;
+  color: #ffffff;
+  text-align: center;
+  font-family: 'Maocao', sans-serif;
+}
+
+#slogan>span {
+  font-family: 'Economica', sans-serif;
+  font-size: 36px;
+  color: #ffffff;
+
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.move-button {
+  color: #ffffff;
+  font-size: 32px;
+}
+
+#content>div#food-menu {
+  width: 331px;
+  height: 84px;
+  border: 1px solid #FFC700;
+  border-radius: 25px;
+
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#food-menu>a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  font-family: 'Economica', sans-serif;
+  font-size: 36px;
+  color: #ffffff;
+}
+
+#footer {
+  padding: 0px 50px 0px 134px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 60px;
+  background-color: #5679AF;
+}
+
+#footer>div:nth-child(2)>p {
+  font-family: 'Economica', sans-serif;
+  margin-left: 60px;
+  font-size: 16px;
+  color: #ffffff;
+  transform: translate(-220px, 0px);
+}
+
+#footer>div:nth-child(3) {
+  width: 120px;
+  /* background-color: pink; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-small {
+  display: flex;
+  align-items: center;
+  width: 100px;
+  height: auto;
+}
+
+/* style for news */
+#news {
+  margin: 0 auto;
+  width: 1440px;
+  height: 1024px;
+  background-color: #5679AF;
+}
+
+#news-content {
+  position: absolute;
+  top: 139px;
+  right: -11px;
+
+  width: 1390px;
+  height: 682px;
+
+
+  display: flex;
+}
+
+#left {
+  width: 790px;
+  height: fit-content;
+  color: #ffffff;
+}
+
+#right-news1 {
+  width: 589px;
+  height: 680px;
+  background-image: url(../img/news1.png);
+}
+
+#right-news2 {
+  width: 589px;
+  height: 680px;
+  background-image: url(../img/news2.png);
+}
+
+#right-news3 {
+  width: 589px;
+  height: 680px;
+  background-image: url(../img/news3.png);
+}
+
+#left>h1 {
+  font-size: 96px;
+  font-family: 'Orewa', sans-serif;
+}
+
+#left>h1>span {
+  font-family: 'Economica', sans-serif;
+}
+
+#left>div {
+  font-family: 'Economica', sans-serif;
+}
+
+#left>div>h3 {
+  margin-top: 107px;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+
+#left>div>p {
+  font-size: 36px;
+}
+
+/* Style for Menu */
+.dish-menu {
+  margin: 0 auto;
+  background-color: #5679AF;
+  min-height: 1024px;
+  max-width: 1440px;
+}
+
+#content>h1 {
+  margin-top: 0%;
+  text-align: center;
+  color: #ffffff;
+  font-size: 63px;
+  font-family: 'Orewa', sans-serif;
+}
+
+#content>h1>span {
+  font-size: 93px;
+  font-family: 'Maocao', sans-serif;
+}
+
+#content>ul.dish-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#content>ul.dish-list>li {
+  list-style: none;
+  margin-right: 80px;
+  margin-left: 75px;
+  margin-bottom: 10px;
+}
+
+#content>ul.dish-list>li>div.dishes {
+  /* background-color: pink; */
+  width: 260px;
+  color: #ffffff;
+  font-family: 'Economica', sans-serif;
+  margin-bottom: 30px;
+}
+
+#content>ul.dish-list>li>div.dishes>div>img {
+  width: 100%;
+}
+
+#content>ul.dish-list>li>div.dishes>div>h4 {
+  text-align: center;
+  font-size: 46px;
+}
+
+#content>ul.dish-list>li>div.dishes>div>span {
+  font-size: 24px;
+}
+
+#content>ul>li:nth-child(4)>div>div>span.discription {
+  overflow-wrap: break-word;
+}
+
+#content>ul.dish-list>li>div.dishes>div>span.price {
+  display: block;
+  color: #FFC700;
+  font-size: 36px;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* Here is the media query, this is only for menu.html */
+@media only screen and (max-width: 1400px) {
+
+  .footer-menu>div:nth-child(2),
+  #nav>div {
+    display: none;
+  }
+
+  #content>ul.dish-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  #content>h1 {
+    font-size: 64px;
+  }
+}
