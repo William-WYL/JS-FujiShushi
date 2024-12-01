@@ -43,6 +43,11 @@ div#container {
   width: 1440px;
   height: 1024px;
   background-image: url(../img/fuji1.png);
+
+  /* Make background image always in the centre */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #header {
@@ -341,23 +346,6 @@ div#food-menu {
 }
 
 
-/* Here is the media query, this is only for menu.html */
-@media only screen and (max-width: 1400px) {
-
-  .footer-menu>div:nth-child(2) {
-    display: none;
-  }
-
-  #content>ul.dish-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-  }
-
-  #content>h1 {
-    font-size: 64px;
-  }
-}
 
 /* hover effect */
 #menu>li>a {
@@ -461,4 +449,115 @@ div#food-menu {
 
 #brand-name>div#thankYou {
   font-family: 'Orewa', sans-serif;
+}
+
+/*  The media query, this is only for menu.html */
+@media only screen and (max-width: 1400px) {
+
+  /* when zoom in make the footer claim disappear */
+  #footer>div:nth-child(2) {
+    display: none;
+  }
+
+  #content>ul.dish-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  #content>h1 {
+    font-size: 64px;
+  }
+}
+
+
+/*  The media query for index, news and contact page */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  /* margin: 0 auto; */
+  transition: transform 0.3s ease;
+}
+
+
+@media (min-width: 720px) {
+  .container {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 1440px) and (min-width: 720px) {
+  .container {
+    transform: scale(calc(100vw / 1440));
+  }
+
+  #news-content {
+    width: 100%;
+  }
+
+  #left>h1 {
+    font-size: 48px;
+  }
+
+  #left>div:nth-child(2)>h3 {
+    margin-top: 10px;
+    font-size: 32px;
+  }
+
+  #left>div:nth-child(2)>p,
+  #left>div:nth-child(3)>a:nth-child(2),
+  #left>div:nth-child(3)>a:nth-child(1) {
+    font-size: 24px;
+  }
+
+  #right-news1,
+  #right-news2,
+  #right-news3 {
+    width: 252px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 720px) {
+  .container {
+    transform: scale(0.5);
+  }
+
+  #news-content {
+    width: 100%;
+  }
+
+  #left>h1 {
+    font-size: 33px;
+  }
+
+  #left>div:nth-child(2)>h3 {
+    margin-top: 5px;
+    font-size: 21px;
+  }
+
+  #left>div:nth-child(2)>p,
+  #left>div:nth-child(3)>a:nth-child(2),
+  #left>div:nth-child(3)>a:nth-child(1) {
+    font-size: 15px;
+  }
+
+  #right-news1,
+  #right-news2,
+  #right-news3 {
+    max-width: 166px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }
