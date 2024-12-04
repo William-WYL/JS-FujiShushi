@@ -74,7 +74,7 @@ function formHasErrors() {
   }
 
   // Phone umber validation
-  let regex = /^\d{8}$/;
+  let regex = /^\d{10}$/;
   let phoneNumValue = document.querySelector("#phonenum").value;
   if (!regex.test(phoneNumValue)) {
     document.querySelector("#phonenum_error").style.display = "block";

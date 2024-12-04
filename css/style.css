@@ -122,14 +122,16 @@ div#container {
   transform: translate(-50%, -50%);
 }
 
-#brand-name>div {
+#brand-name>div>h1 {
+  margin: 0;
   font-size: 96px;
   color: #ffffff;
   text-align: center;
   font-family: 'Maocao', sans-serif;
 }
 
-#slogan>span {
+
+#slogan>h3 {
   font-family: 'Economica', sans-serif;
   font-size: 36px;
   color: #ffffff;
