@@ -68,7 +68,8 @@ div#container {
 
 #nav {
   height: 100%;
-  /* background: skyblue; */
+  /* Always on top */
+  z-index: 10
 }
 
 #nav>#menu {
@@ -122,7 +123,8 @@ div#container {
   transform: translate(-50%, -50%);
 }
 
-#brand-name>div>h1 {
+#brand-name>div>h1,
+#brand-name>div {
   margin: 0;
   font-size: 96px;
   color: #ffffff;
@@ -242,18 +244,24 @@ div#food-menu {
   width: 589px;
   height: 680px;
   background-image: url(../img/news1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #right-news2 {
   width: 589px;
   height: 680px;
   background-image: url(../img/news2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #right-news3 {
   width: 589px;
   height: 680px;
   background-image: url(../img/news3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #left>h1 {
@@ -464,7 +472,7 @@ div#food-menu {
   #content>ul.dish-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
   }
 
   #content>h1 {
@@ -475,19 +483,14 @@ div#food-menu {
 
 /*  The media query for index, news and contact page */
 body {
-  margin: 0;
-  padding: 0;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
   min-height: 100vh;
-  font-family: Arial, sans-serif;
 }
 
 .container {
   width: 100%;
   max-width: 1440px;
-  /* margin: 0 auto; */
   transition: transform 0.3s ease;
 }
 
@@ -519,15 +522,20 @@ body {
   #left>div:nth-child(2)>p,
   #left>div:nth-child(3)>a:nth-child(2),
   #left>div:nth-child(3)>a:nth-child(1) {
-    font-size: 24px;
+    font-size: 28px;
   }
 
   #right-news1,
   #right-news2,
   #right-news3 {
-    width: 252px;
+    width: 50%;
     background-size: contain;
     background-repeat: no-repeat;
+  }
+
+
+  #nav>#menu>li>a {
+    font-size: 28px;
   }
 }
 
@@ -552,14 +560,18 @@ body {
   #left>div:nth-child(2)>p,
   #left>div:nth-child(3)>a:nth-child(2),
   #left>div:nth-child(3)>a:nth-child(1) {
-    font-size: 15px;
+    font-size: 24px;
   }
 
   #right-news1,
   #right-news2,
   #right-news3 {
-    max-width: 166px;
+    width: 50%;
     background-size: contain;
     background-repeat: no-repeat;
+  }
+
+  #nav>#menu>li>a {
+    font-size: 24px;
   }
 }

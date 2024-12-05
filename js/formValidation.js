@@ -55,9 +55,9 @@ function resetForm(e) {
  * return   True if an error was found; False if no errors were found
  */
 function formHasErrors() {
-  // Code below here
   let errorFlag = false;
 
+  // General required fields validation
   let requiredFields = ["fname", "lname", "phonenum", "email", "feedback"];
   for (let i = 0; i < requiredFields.length; i++) {
     let textField = document.getElementById(requiredFields[i]);
@@ -74,15 +74,12 @@ function formHasErrors() {
   }
 
   // Phone umber validation
-  let regex = /^\d{10}$/;
+  let regexNum = /^\d{10}$/;
   let phoneNumValue = document.querySelector("#phonenum").value;
-  if (!regex.test(phoneNumValue)) {
+  if (document.querySelector("#phonenum").value && !regexNum.test(phoneNumValue)) {
     document.querySelector("#phonenum_error").style.display = "block";
-
-    if (!errorFlag) {
-      document.querySelector("#phonenum").focus();
-      document.querySelector("#phonenum").select();
-    }
+    document.querySelector("#phonenum").focus();
+    document.querySelector("#phonenum").select();
 
     errorFlag = true;
   }
@@ -90,19 +87,14 @@ function formHasErrors() {
   // Email address validation
   const userEmailValue = document.querySelector("#email").value;
   const regexEmail = new RegExp(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/);
-  if (!regexEmail.test(userEmailValue)) {
+  if (document.querySelector("#email").value && !regexEmail.test(userEmailValue)) {
     document.querySelector("#email_error").style.display = "block";
-
-    if (!errorFlag) {
-      document.querySelector("#email").focus();
-      document.querySelector("#email").select();
-    }
+    document.querySelector("#email").focus();
+    document.querySelector("#email").select();
 
     errorFlag = true;
   }
 
-
-  // Code above here
   return errorFlag;
 }
 
@@ -115,8 +107,6 @@ function hideAllErrors() {
     errorFields[i].style.display = "none";
   }
 }
-
-
 
 /*
  * Determines if a text field element has input

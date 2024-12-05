@@ -4,10 +4,9 @@
 	font-family: 'Economica', sans-serif;
 }
 
-
-
 div#form-contact {
 	width: 50%;
+	min-width: 380px;
 	margin: 100px auto;
 	background-color: #9cb9d3;
 	border-radius: 10px;
