@@ -138,3 +138,11 @@ textarea {
 #content {
 	height: 863px
 }
+
+/* Style the form so that when the user has focus on a field, 
+its background colour and font colour are changed. */
+input:focus,
+textarea:focus {
+	background-color: #00145742;
+	color: #FFC700;
+}
