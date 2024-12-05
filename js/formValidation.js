@@ -95,6 +95,8 @@ function formHasErrors() {
     errorFlag = true;
   }
 
+  // Shrink the textarea in case of overflow
+  document.querySelector("#feedback").style.height = "100px";
   return errorFlag;
 }
 
@@ -120,6 +122,7 @@ function formFieldHasInput(fieldElement) {
     // Invalid entry
     return false;
   }
+
 
   // Valid entry
   return true;

@@ -133,7 +133,7 @@ div#container {
 }
 
 
-#slogan>h3 {
+#slogan>h2 {
   font-family: 'Economica', sans-serif;
   font-size: 36px;
   color: #ffffff;
@@ -187,7 +187,7 @@ div#food-menu {
 #footer>div:nth-child(2)>p {
   font-family: 'Economica', sans-serif;
   margin-left: 60px;
-  font-size: 16px;
+  font-size: 24px;
   color: #ffffff;
   transform: translate(-220px, 0px);
 }
@@ -210,6 +210,7 @@ div#food-menu {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: left center;
+
 }
 
 /* style for news */
@@ -277,7 +278,7 @@ div#food-menu {
   font-family: 'Economica', sans-serif;
 }
 
-#left>div>h3 {
+#left>div>h2 {
   margin-top: 107px;
   font-size: 48px;
   font-weight: 700;
@@ -334,7 +335,7 @@ div#food-menu {
   width: 100%;
 }
 
-#content>ul.dish-list>li>div.dishes>div>h4 {
+#content>ul.dish-list>li>div.dishes>div>h2 {
   text-align: center;
   font-size: 46px;
 }
@@ -349,7 +350,7 @@ div#food-menu {
 
 #content>ul.dish-list>li>div.dishes>div>span.price {
   display: block;
-  color: #FFC700;
+  color: #ffd500;
   font-size: 36px;
   width: 100%;
   text-align: center;
@@ -453,14 +454,19 @@ div#food-menu {
   font-family: 'Economica', sans-serif;
 }
 
-#brand-name>div#thankYouJp {
-  font-family: 'Yuji', sans-serif;
+#brand-name>h1 {
+  color: #ffffff;
   font-size: 76px;
+  text-align: center;
+  margin: 0;
 }
 
-#brand-name>div#thankYou {
+#brand-name>h1#thankYouJp {
+  font-family: 'Yuji', sans-serif;
+}
+
+#brand-name>h1#thankYou {
   font-family: 'Orewa', sans-serif;
-  font-size: 76px;
 }
 
 /*  The media query, this is only for menu.html */
@@ -504,10 +510,6 @@ body {
 }
 
 @media (max-width: 1440px) and (min-width: 720px) {
-  .container {
-    transform: scale(calc(100vw / 1440));
-  }
-
   #news-content {
     width: 100%;
   }
@@ -578,4 +580,150 @@ body {
   #hamburger {
     font-size: 24px;
   }
+}
+
+/* form-contact style */
+div#form-contact {
+  width: 50%;
+  min-width: 380px;
+  margin: 100px auto;
+  background-color: #9cb9d3;
+  border-radius: 10px;
+  box-shadow: 0 0 8px #000;
+  padding: 20px;
+
+  font-family: 'Economica', sans-serif;
+}
+
+#form-contact fieldset {
+  margin-bottom: 15px;
+  padding: 5px;
+  border: none;
+}
+
+#form-contact fieldset:last-child {
+  margin-bottom: 0px;
+}
+
+#form-contact hr {
+  margin-bottom: 10px;
+}
+
+#form-contact legend {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-bottom: 10px;
+  font-size: 24pt;
+}
+
+#form-contact h3 {
+  margin: 0px 0px 10px 0px;
+}
+
+#form-contact ul {
+  list-style: none;
+  margin: 0;
+}
+
+#form-contact label {
+  font-size: 16pt;
+}
+
+#form-contact input:not(input[type="radio"]) {
+  width: 200px;
+}
+
+#form-contact .client {
+  width: 130px;
+  display: inline-block;
+  text-align: right;
+}
+
+#form-contact .client_error {
+  margin-left: 130px;
+}
+
+#feedback_error {
+  margin: 0;
+}
+
+#contact_form>fieldset:nth-child(2) {
+  margin-bottom: 0px;
+}
+
+
+#form-contact input[type=text],
+#form-contact input[type=number],
+#form-contact button[type=submit],
+#form-contact button[type=reset] {
+  padding: 5px 5px;
+}
+
+/* Remove spinner buttons for modern browsers */
+#form-contact .no-spinner {
+  -moz-appearance: textfield;
+  /* For Firefox */
+  -webkit-appearance: textfield;
+  /* For Chrome, Safari, Edge */
+  appearance: textfield;
+  /* Standard property */
+}
+
+/* Hide inner spin buttons (for WebKit browsers like Chrome, Safari) */
+#form-contact .no-spinner::-webkit-inner-spin-button,
+#form-contact .no-spinner::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  /* Ensure proper alignment */
+}
+
+#form-contact button[type=submit],
+#form-contact button[type=reset] {
+  width: 70px;
+}
+
+
+#form-contact textarea {
+  width: 90%;
+}
+
+#form-contact .formfield {
+
+  margin: 10px 0px;
+}
+
+#form-contact .bold {
+  font-weight: bold;
+}
+
+#form-contact .left {
+  float: left;
+}
+
+#form-contact .right {
+  float: right;
+}
+
+#form-contact .clear {
+  clear: both;
+}
+
+#form-contact .error {
+  color: red;
+  font-style: italic;
+  font-weight: bold;
+  padding: 10px 0;
+  display: none;
+}
+
+#form-contact-content {
+  height: 863px
+}
+
+/* Style the form so that when the user has focus on a field, 
+its background colour and font colour are changed. */
+#form-contact input:focus,
+#form-contact textarea:focus {
+  background-color: #00145742;
+  color: #FFC700;
 }

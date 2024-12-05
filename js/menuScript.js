@@ -18,7 +18,7 @@ function renderMenu(menuData) {
       <div class="dishes">
         <img src="${menuData[i].image}" alt="">
         <div>
-          <h4>${menuData[i].name}</h4>
+          <h2>${menuData[i].name}</h2>
           <span class="discription">${menuData[i].discription}</span>
           <br>
           <span class="price">${menuData[i].price}</span>
