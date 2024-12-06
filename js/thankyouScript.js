@@ -1,14 +1,9 @@
-
-
-// const timer = setInterval(() => {
-//   countdown--;
-//   homeSec.textContent = countdown;
-
-//   if (countdown === 0) {
-//     clearInterval(timer);
-//     window.location.href = "index.html";
-//   }
-// }, 1000);
+/* 
+  Project 4
+  Name: Wei Wang
+  Date: December 4, 2024
+  Description: SCRIPT FOR THANKYOU PAGE
+*/
 
 function load() {
   let homeSec = document.querySelector("#homeSec");

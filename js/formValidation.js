@@ -1,3 +1,10 @@
+/* 
+  Project 4
+  Name: Wei Wang
+  Date: December 4, 2024
+  Description: SCRIPT FOR FORM VALIDATION
+*/
+
 /*
  * Handles the submit event of the form
  *

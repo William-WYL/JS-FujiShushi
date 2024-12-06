@@ -1,3 +1,9 @@
+/* 
+  Project 4
+  Name: Wei Wang
+  Date: December 4, 2024
+  Description: PRODUCTS/SERVICES PAGE
+*/
 function load() {
   fetch('assets/menu.json')
     .then(result => {
